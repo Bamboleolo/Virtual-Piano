@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Virtual piano</title>
+    <style>
+        html {
+            background-color: aqua;
+        }
+
+        kbd {
+            border: 1px solid black;
+            background-color: white;
+            display: inline-block;
+            width: 70px;
+            height: 200px;
+            margin-left: 0;
+            text-align: center;
+
+        }
+
+        #W {
+            left: -25px;
+        }
+
+        #E {
+            left: -31px;
+        }
+
+        #T {
+            left: 38px;
+        }
+
+        #Y {
+            left: 34px;
+        }
+
+        #U {
+            left: 28px;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .black-keys {
+            display: inline-block;
+            width: 70%;
+            margin: auto;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .black-keys kbd {
+            position: relative;
+            top: -30px;
+            background-color: black;
+            width: 8%;
+            height: 120px;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="white-keys">
+            <kbd>A</kbd>
+            <kbd>S</kbd>
+            <kbd>D</kbd>
+            <kbd>F</kbd>
+            <kbd>G</kbd>
+            <kbd>H</kbd>
+            <kbd>J</kbd>
+        </div>
+
+        <div class="black-keys">
+            <kbd id="W">W</kbd>
+            <kbd id="E">E</kbd>
+            <kbd id="T">T</kbd>
+            <kbd id="Y">Y</kbd>
+            <kbd id="U">U</kbd>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
